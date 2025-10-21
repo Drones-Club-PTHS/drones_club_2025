@@ -1,4 +1,4 @@
-# OpenCV
+# Блок 7. Заметки. OpenCV.
 
 [Документация OpenCV](https://docs.opencv.org/4.x/index.html)
 [OpenCV-Python Tutorials](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
