@@ -27,8 +27,8 @@ image[10:12, 10:12] = (0, 0, 0) # Перезаписать диапазон пи
 ### Размер изображения
 Размер массива (размер изображения) можно получить, обратившись к полю `shape`, который вернёт массив.
 ```python
-image.shape # [height, width], если канал один
-            # [height, width, channels], если каналов несколько
+shape = image.shape # [height, width], если канал один
+                    # [height, width, channels], если каналов несколько
 # Массив можно сразу распаковать в переменные
 height, width, channels = image.shape
 ```
@@ -36,10 +36,10 @@ height, width, channels = image.shape
 Для изменения размера изрбражения можно использовать функцию `resize()`.
 ```python
 # Задать ширину и высоту
-cv2.resize(image, [width, height])
+resized = cv2.resize(image, [width, height])
 # Задать коэффициент увеличения
-cv2.resize(image, [0, 0], fx=0.5, fy=0.5)
-cv2.resize(image, None, fx=0.5, fy=0.5)
+resized = cv2.resize(image, [0, 0], fx=0.5, fy=0.5)
+resized = cv2.resize(image, None, fx=0.5, fy=0.5)
 ```
 [Документация `resize()`](https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html#ga47a974309e9102f5f08231edc7e7529d)
 
